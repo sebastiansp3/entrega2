@@ -10,5 +10,29 @@ public class App {
         double costoTotal = 0;
         int contadorAlta = 0;
         
+        for (int i = 1; i <= cantidadLote; i++) {
+            sc.nextLine();
+            
+            System.out.print("ingrese el nombre productos " + i + ": ");
+            String nombre = sc.nextLine();
+            
+            System.out.print("ingrese el costo: ");
+
+            double producto = sc.nextDouble(); 
+            
+            costoTotal += producto;
+
+            if (producto < 10000) {
+                System.out.println("categoria baja");
+            } 
+            else if (producto >= 10000 && producto <= 50000) { 
+                System.out.println("categoria media");
+            } 
+            else if (producto > 50000) {
+                System.out.println("categoria alta");
+                contadorAlta++; 
+            }
+        }
     }
 }
+    
