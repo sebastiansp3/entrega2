@@ -33,6 +33,12 @@ public class App {
                 contadorAlta++; 
             }
         }
+             
+        System.out.println("--- REPORTE FINAL ---");
+        System.out.println("Costo total del lote: " + costoTotal);
+        System.out.println("Cantidad en categoria alta: " + contadorAlta);
+        
+        sc.close();
     }
 }
     
